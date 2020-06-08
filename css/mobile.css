@@ -1,0 +1,94 @@
+/* Our Mission */
+
+#our-mission .mission-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#our-mission .saving-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+#our-mission .saving-container .icons {
+    display: none;
+}
+#our-mission .saving-container .save ,
+#our-mission .saving-container .equivalent {
+    align-self: center;
+    justify-self: center;
+}
+#our-mission .saving-container .save h3 {
+    padding-bottom: 0.6rem;
+}
+
+/*  Our team  */
+
+#our-team .container .team-container .cofunders {
+    grid-template-columns: repeat(2 ,1fr);
+    row-gap: 2rem;
+}
+
+/* Location */
+
+#location .container .l-container img {
+    width: 150px;
+    height: 110px;
+}
+
+/* Small Mobile */
+
+@media(max-width:600px) {
+
+/* Navigation */
+
+#main-nav .container .about-us {
+    display: none;
+}
+
+#main-nav .container {
+    grid-template-rows: repeat(2 , 1fr);
+}
+
+#main-nav .container .logo {
+    justify-self: center;
+    width: 70px;
+    margin-left: 0;
+}
+#main-nav .container .navigation {
+    background-color: lightcoral;
+}
+#main-nav .container .navigation a {
+    font-size: 10px;
+}
+#main-nav  ul li a.current {
+    text-decoration: none;
+    color: #404040;
+}
+
+/*  Our Goals */
+
+#our-mission .goals-container img{
+    width: 50px;
+    margin: 1rem;
+}
+
+/* Savings */
+
+#our-mission .saving-container {
+    grid-template-columns: repeat(1 ,1fr);
+    grid-row-gap: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+/* Partnerships */
+
+#partnership .container .p-container .partners{
+    grid-template-columns: repeat(1 ,1fr);
+    row-gap: 1.3rem;
+}
+
+#location .container .l-container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+}
+
+}
